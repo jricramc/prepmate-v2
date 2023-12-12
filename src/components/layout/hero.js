@@ -35,7 +35,7 @@ export default function Hero() {
     src="/meal-prep-img-home.png"
     width={800}
     height={20}
-    // layout="responsive"
+    layout="responsive"
     alt="meals"
   />
 </div>
