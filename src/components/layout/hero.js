@@ -33,9 +33,9 @@ export default function Hero() {
       <div className="md:block sm:hidden mx-auto">
   <Image
     src="/meal-prep-img-home.png"
-    width={400}
+    width={800}
     height={20}
-    layout="responsive"
+    // layout="responsive"
     alt="meals"
   />
 </div>
