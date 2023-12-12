@@ -1,7 +1,7 @@
 import { Merriweather } from 'next/font/google'
 import './globals.css'
-import Header from '../components/layout/header'
-import Footer from '../components/layout/footer'
+import Header from '../pages/layout/header'
+import Footer from '../pages/layout/footer'
 
 const merri = Merriweather({ subsets: ['latin'], weight: ['300', '400', '700']})
 
