@@ -30,9 +30,15 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      <div className="md:block sm: hidden mx-auto">
-        <Image src={'/meal-prep-img-home.png'} width={'600'} height={20} objectFit={'contain'} alt={'meals'} />
-      </div>
+      <div className="md:block sm:hidden mx-auto">
+  <Image
+    src="/meal-prep-img-home.png"
+    width={400}
+    height={20}
+    layout="responsive"
+    alt="meals"
+  />
+</div>
     </section>
   );
 }
