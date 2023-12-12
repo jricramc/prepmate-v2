@@ -1,5 +1,5 @@
 # Use the Node.js 16 Alpine image for a smaller final image
-FROM node:16-alpine
+FROM node:18-slim
 
 # Set the working directory in the Docker container
 WORKDIR /usr/src/app
