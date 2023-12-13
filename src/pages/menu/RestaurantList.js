@@ -4,7 +4,7 @@ export default function RestaurantList() {
             <div className="text-center ma">
                 <img src="/-prep-img-home.png" className="max-h-auto max-h-32 block mx-auto" layout="fill" alt=" prep" />
             </div>
-            <h4 className="font-semibold my-3">Mill City Pizza</h4>
+            <h4 className="font-semibold my-3">Pizza</h4>
             <p className="text-gray-600 text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
