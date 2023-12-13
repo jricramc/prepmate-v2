@@ -10,6 +10,28 @@ function classNames(...classes) {
   
   export default function ContactUs() {
     const [agreed, setAgreed] = useState(false)
+    const [submitMessage, setSubmitMessage] = useState(null);
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      const formData = new FormData(e.target);
+  
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          body: formData,
+        });
+  
+        if (response.ok) {
+          setSubmitMessage('Form submitted successfully');
+        } else {
+          setSubmitMessage('Form submission failed');
+        }
+      } catch (error) {
+        setSubmitMessage('An error occurred during submission');
+      }
+    };
   
     return (
       <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
@@ -20,7 +42,12 @@ function classNames(...classes) {
             We will get back to you as soon as possible.
           </p>
         </div>
-        <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form
+        action="/api/contact"
+        method="POST"
+        onSubmit={handleSubmit}
+        className="mx-auto mt-16 max-w-xl sm:mt-20"
+      >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
               <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -215,14 +242,15 @@ function classNames(...classes) {
             </Switch.Group>
           </div>
           <div className="mt-10">
-            <button
-              type="submit"
-              className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-            >
+          <button
+            type="submit"
+            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
+          >
               Let's talk
             </button>
           </div>
         </form>
+        {submitMessage && <p className="mt-4 text-green-500">{submitMessage}</p>}
       </div>
     )
   }

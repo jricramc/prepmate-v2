@@ -8,39 +8,39 @@ export default function Home() {
     <Hero />
     <HomeMenu />
     <section className='text-center my-12 p-4'>
-      <SectionHeader mainHeader="A Fresh Take On Ordering Out" />
-      <div className='mx-auto text-gray-800 mt-4 grid grid-cols-1 md:grid-cols-10 gap-4 p-5'>
-        <div className='aspect-w-16 aspect-h-9 w-full mb-4 md:mb-0 md:mr-4 md:col-span-5'>
-          <img src={'/takeout.jpg'} className="object-cover w-full h-full" alt={'meals'} />
-        </div>
-        <div className='md:col-span-5 text-left'>
-          At PrepMate, we're revolutionizing the dining experience. Our service goes beyond the traditional meal plan, 
-          offering unprecedented ease and flexibility. With our intuitive app, managing your culinary journey is a breeze. 
-          Here's what sets us apart: <br /> <br />
-          <div className='ml-5'>
-            <ul className='list-disc'>
-              <li className='mb-4'>
-                <b>Handpicked Restaurants, Just for You: </b>We carefully curate our selection of restaurants, ensuring that 
-                  you have access to top-quality meals that span a wide range of cuisines and styles. Whether you're craving 
-                  comfort food or adventurous flavors, our diverse offerings cater to every palate.
-              </li>
-              <li className='mb-4'>
-                <b>Simplified Meal Subscriptions: </b>Say goodbye to the hassle of daily meal decisions. With PrepMate, 
-                  subscribing to your favorite local meals is as easy as a few clicks. Our platform is designed to make meal 
-                  planning seamless, giving you more time to savor and less time stressing.
-              </li>
-              <li className='mb-4'>
-                <b>Support Local, Eat Global: </b>By choosing PrepMate, you're not just treating yourself to delicious meals; you're 
-                  also supporting the heart and soul of your community – the local restaurants. Indulge in a world of flavors while 
-                  contributing to the local economy.
-              </li>
-            </ul>
-          </div>
-          Join us at PrepMate and experience the future of dining—where convenience meets culinary excellence.
-        </div>
+  <SectionHeader mainHeader="A Fresh Take On Ordering Out" />
+  <div className='mx-auto text-gray-800 mt-4 grid grid-cols-1 md:grid-cols-12 gap-4 p-5 items-center'>
+    <div className='aspect-w-16 aspect-h-9 w-full mb-4 md:mb-0 md:mr-4 md:col-start-2 md:col-span-4'>
+      <img src={'/healthy-meal-prep-dinners-teg-new-featured.jpg'} className="object-cover w-full h-full" alt={'meals'} />
+    </div>
+    <div className='md:col-start-6 md:col-span-6 text-left text-lg'>
+      At PrepMate, we're revolutionizing the dining experience. Our service goes beyond the traditional meal plan, 
+      offering unprecedented ease and flexibility. With our intuitive app, managing your culinary journey is a breeze. 
+      Here's what sets us apart: <br /> <br />
+      <div className='ml-5'>
+        <ul className='list-disc'>
+          <li className='mb-4'>
+            <b>Handpicked Restaurants, Just for You: </b>We carefully curate our selection of restaurants, ensuring that 
+              you have access to top-quality meals that span a wide range of cuisines and styles. Whether you're craving 
+              comfort food or adventurous flavors, our diverse offerings cater to every palate.
+          </li>
+          <li className='mb-4'>
+            <b>Simplified Meal Subscriptions: </b>Say goodbye to the hassle of daily meal decisions. With PrepMate, 
+              subscribing to your favorite local meals is as easy as a few clicks. Our platform is designed to make meal 
+              planning seamless, giving you more time to savor and less time stressing.
+          </li>
+          <li className='mb-4'>
+            <b>Support Local, Eat Global: </b>By choosing PrepMate, you're not just treating yourself to delicious meals; you're 
+              also supporting the heart and soul of your community – the local restaurants. Indulge in a world of flavors while 
+              contributing to the local economy.
+          </li>
+        </ul>
       </div>
-    </section>
-    <section className='text-center my-12 p-4'>
+      Join us at PrepMate and experience the future of dining—where convenience meets culinary excellence.
+    </div>
+  </div>
+</section>
+    {/* <section className='text-center my-12 p-4'>
       <SectionHeader mainHeader="So whats the point?" />
       <div className='mx-auto text-gray-800 mt-4 grid grid-cols-1 md:grid-cols-10 gap-4 p-5'>
         <div className='md:col-span-5 text-left'>
@@ -69,7 +69,7 @@ export default function Home() {
           <img src={'/takeout.jpg'} className="object-cover w-full h-full" alt={'meals'} />
       </div>
     </div>
-    </section>
+    </section> */}
     <section className='text-center my-12 p-4'>
     <div className="py-5 px-4 mx-auto max-w-screen-xl sm:py-5 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
