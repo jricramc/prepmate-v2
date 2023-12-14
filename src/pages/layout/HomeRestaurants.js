@@ -9,7 +9,7 @@ export default function HomeRestaurants() {
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 <RestaurantList name="Hong Kong" 
-                description="Harvard Square's premium choice for authentic Chinese food and signature Scorpion Bowl" 
+                description="Harvard Square's  authentic Chinese food and signature Scorpion Bowl" 
                 img= "/hongkong.jpeg" />
 
                 <RestaurantList name="Dosa N Curry" 
