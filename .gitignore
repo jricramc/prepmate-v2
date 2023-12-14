@@ -34,3 +34,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+src/app/About/page.js
+src/app/Affiliates/page.js
+src/app/Careers/page.js
+src/app/Contact/page.js
+src/app/Cookies/page.js
+src/app/FAQ/page.js
+src/app/Login/page.js
+src/app/Privacy/page.js
+src/app/Restaurants/page.js
+src/app/Signup.js/page.js
+src/app/Terms/page.js
