@@ -10,7 +10,8 @@ export default function RestaurantList({ name, description, img }) {
       <h4 className="font-semibold my-3">{name}</h4>
       <p className="text-gray-600 text-sm">{description}</p>
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSda04_FSvmxd0KvrPHobXdk6JZhwtnrm6fRc4m_ZQPmOlARDQ/viewform"
+        // href="https://docs.google.com/forms/d/e/1FAIpQLSda04_FSvmxd0KvrPHobXdk6JZhwtnrm6fRc4m_ZQPmOlARDQ/viewform"
+        href= "https://prepmatemvp-production.up.railway.app/millShop"
         target="_blank"
         className="bg-primary text-white rounded-full px-8 py-0.5 text-sm font-semibold hover:bg-primary-light"
       >

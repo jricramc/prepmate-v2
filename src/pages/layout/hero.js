@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from 'next/link';
 
 export default function Hero() {
-  const orderNowLink = "https://docs.google.com/forms/d/e/1FAIpQLSda04_FSvmxd0KvrPHobXdk6JZhwtnrm6fRc4m_ZQPmOlARDQ/viewform?usp=sf_link";
+  // const orderNowLink = "https://docs.google.com/forms/d/e/1FAIpQLSda04_FSvmxd0KvrPHobXdk6JZhwtnrm6fRc4m_ZQPmOlARDQ/viewform?usp=sf_link";
+  const orderNowLink= "https://prepmatemvp-production.up.railway.app/millShop"
 
   return (
     <section className="hero md:mt-8 p-4 flex">
