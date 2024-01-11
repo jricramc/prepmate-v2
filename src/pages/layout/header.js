@@ -69,7 +69,7 @@ export default function Example() {
                     onClick={() => window.location.href='/Login'}
                     className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
                   >
-                    Login
+                    Order Now
                   </button>
                 </div>
               </div>

@@ -76,7 +76,7 @@ export default function Home() {
     <div className="py-5 px-4 mx-auto max-w-screen-xl sm:py-5 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900">What are you waiting for?</h2>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSda04_FSvmxd0KvrPHobXdk6JZhwtnrm6fRc4m_ZQPmOlARDQ/viewform" target= "_blank" className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-8 py-4 text-lg font-semibold text-white 
+            <a href="https://prepmatemvp-production.up.railway.app" target= "_blank" className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-8 py-4 text-lg font-semibold text-white 
                                 shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 
                                 focus-visible:outline-red-500">Order and Save</a>
         </div>

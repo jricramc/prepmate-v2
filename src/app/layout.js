@@ -7,7 +7,7 @@ const merri = Merriweather({ subsets: ['latin'], weight: ['300', '400', '700']})
 
 export const metadata = {
   title: 'PrepMate',
-  description: 'Generated ',
+  description: 'Food!',
 }
 
 export default function RootLayout({ children }) {
