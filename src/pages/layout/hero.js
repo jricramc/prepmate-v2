@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   // const orderNowLink = "https://docs.google.com/forms/d/e/1FAIpQLSda04_FSvmxd0KvrPHobXdk6JZhwtnrm6fRc4m_ZQPmOlARDQ/viewform?usp=sf_link";
-  const orderNowLink= "https://prepmatemvp-production.up.railway.app/millShop"
+  const orderNowLink= "https://prepmatemvp-production.up.railway.app"
 
   return (
     <section className="hero md:mt-8 p-4 flex">
@@ -22,7 +22,7 @@ export default function Hero() {
           Top Local Meals Prepped for You. <br />
           Satisfaction is Just a Click Away.
         </p>
-        <div className="gap-4 text-sm">
+        <div className="flex flex-col items-center gap-4 text-sm">
           <a
             href={orderNowLink}
             target="_blank" // This opens the link in a new tab
@@ -31,7 +31,7 @@ export default function Hero() {
             Order now
             <Right />
           </a>
-          <button className="flex items-center border-0 gap-2 px-5 py-2 text-gray-600 font-semibold" href="/learn">
+          <button className="flex items-center border-0 gap-2 px-5 py-2 text-gray-600 font-semibold" href="/about">
             Learn more
             <Right />
           </button>

@@ -8,21 +8,21 @@ export default function HomeRestaurants() {
                 <SectionHeader mainHeader="Our Partners" />
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <RestaurantList name="Hong Kong" 
-                description="Harvard Square's  authentic Chinese food and signature Scorpion Bowl" 
+                <RestaurantList name="Life Alive" 
+                description="Organic, plant-based cafe in the Boston area serving food that is good for you and good for the planet." 
                 img= "/hongkong.jpeg" />
 
-                <RestaurantList name="Dosa N Curry" 
-                description="A 100% vegetarian, North Indian, South Indian and Indo-Chinese eatery"
+                <RestaurantList name="Spice Delight" 
+                description="With our array of spices and ingredients we bring you the finest Indian Cuisine in Massachusetts."
                 img= "dosa.jpeg" />
 
-                <RestaurantList name="Mill City Pizza" 
-                description="Authentic pizza crust should be crispy on the outside and practically melt in your mouth shortly after you bite into it" 
+                <RestaurantList name="Mill City" 
+                description="Ready to go meal kits featuring rice bowls, pastas, and more." 
                 img = "mill.jpeg"/>
 
-                <RestaurantList name="Five Spices House" 
-                description="Boston Authentic Sichuan Restaurant with a variety of proteins available from beef and chicken to brown beech mushrooms for vegetarians "
-                img= "five.png" />
+                <RestaurantList name="Silk Road" 
+                description="At Silk Road Uyghur Cuisine, we proudly prepare and serve a mix of authentic Uyghur and Central Asian dishes."
+                img= "silk-road.jpg" />
                
             </div>
         </section>
