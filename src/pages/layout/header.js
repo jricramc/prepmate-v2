@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'Restaurants', href: '/Restaurants', current: false },
-  { name: 'Affiliates', href: '/Affiliates', current: false },
 ]
 
 
@@ -37,13 +36,15 @@ export default function Example() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex flex-shrink-0 items-center">
+                  <a href="/">
                   <img
-                    height='50'
-                    width='50'
+                    height='100'
+                    width='100'
                     className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
                     src="redPrepMate.png"
                     alt="PrepMate Logo"
                   />
+                  </a>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4 font-semibold">
                   {navigation.map((item) => (
