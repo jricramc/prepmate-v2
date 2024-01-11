@@ -11,7 +11,7 @@ export default function RestaurantList({ name, description, img }) {
         <p className="text-gray-600 text-sm">{description}</p>
       </div>
       <a
-        href= "https://prepmatemvp-production.up.railway.app"
+        href= "https://prepmate-launch.up.railway.app"
         target="_blank"
         className="bg-primary text-white rounded-full px-10 py-1 text-sm mt-2 font-semibold hover:bg-primary-light mb-3"
       >
