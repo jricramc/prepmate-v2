@@ -1,6 +1,6 @@
 const navigation = {
     partnerships: [
-      { name: 'Restaurants', href: '/Restaurants' },
+      { name: 'Restaurants', href: '#' },
       { name: 'Affiliates', href: '/Affiliates' },
     ],
     support: [
