@@ -66,7 +66,7 @@ export default function Example() {
                 <div className="flex-shrink-0">
                   <button
                     type="button"
-                    onClick={() => window.location.href='/Restaurants'}
+                    onClick={() => window.location.href='https://prepmate-launch.up.railway.app'}
                     className="relative inline-flex items-center gap-x-1.5 rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
                   >
                     Order Now
