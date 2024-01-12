@@ -13,19 +13,16 @@ export default function Home() {
           <div className='ml-5'>
             <ul className='list-disc'>
               <li className='mb-4'>
-                Choose your favorite dishes with just a few clicks. Our subscription service 
-                makes meal planning hassle-free, giving you more time to enjoy diverse, delicious meals.
+              Choose Your Meals: Browse our diverse menu and select your favorite dishes from local restaurants. With PrepMate, you have the freedom to mix and match meals, creating your perfect meal plan for 3-4 days.
               </li>
               <li className='mb-4'>
-                <b>Support Local, Savor Global: </b>With every order, you're not just indulging in exquisite meals; you're also supporting 
-                your local food scene. Experience a world of flavors while bolstering your community.
+              Order by the Deadline: Make sure to place your order by 12 PM on either Saturday or Tuesday. This schedule helps us ensure that everything is fresh and ready for you.
               </li>
               <li className='mb-4'>
-                <b>Join the Revolution </b>PrepMate isn't just about ordering food; it's about enjoying a culinary journey that's as unique as your taste. Mix, match, and savor the best of your local restaurants, all through a single, convenient service.
+              Relax and Wait for Delivery: Your carefully curated meal kit will be delivered to your doorstep the following day, between 5-9 PM. Enjoy the convenience of having multiple days' worth of delicious meals without the daily hassle of planning and cooking.
               </li>
             </ul>
           </div>
-          Join us at PrepMate and experience the future of dining—where convenience meets culinary excellence.
         </div>
       </div>
     </section>
