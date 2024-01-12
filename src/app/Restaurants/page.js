@@ -15,17 +15,17 @@ export default function RestaurantPage() {
                 <RestaurantList name="Spice Delight" 
                 description="With our array of spices and ingredients we bring you the finest Indian Cuisine in Massachusetts."
                 img= "dosa.jpeg" 
-                orderLink="/stores/spice-delight"/>
+                orderLink="/stores/life-alive"/>
 
                 <RestaurantList name="Mill City" 
                 description="Ready to go meal kits featuring rice bowls, pastas, and more." 
                 img = "mill.jpeg"
-                orderLink="/stores/mill-city"/>
+                orderLink="/stores/life-alive"/>
 
                 <RestaurantList name="Silk Road" 
                 description="At Silk Road Uyghur Cuisine, we proudly prepare and serve a mix of authentic Uyghur and Central Asian dishes."
                 img= "silk-road.jpg" 
-                orderLink="/stores/silk-road"/>
+                orderLink="/stores/life-alive"/>
                
             </div>
             <div className="text-center mt-8 text-xl">
