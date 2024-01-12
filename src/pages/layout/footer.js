@@ -1,6 +1,6 @@
 const navigation = {
     partnerships: [
-      { name: 'Restaurants', href: '#' },
+      { name: 'Restaurants', href: '/Restaurants' },
       { name: 'Affiliates', href: '/Affiliates' },
     ],
     support: [
@@ -9,7 +9,7 @@ const navigation = {
     ],
     company: [
       { name: 'About', href: '/About' },
-      { name: 'Careers', href: '#' },
+      { name: 'Careers', href: '/Careers' },
     ],
     legal: [
       { name: 'Privacy', href: '/Privacy' },

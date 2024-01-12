@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function RestaurantList({ name, description, img }) {
+export default function RestaurantList({ name, description, img, orderLink = "https://prepmate-launch.up.railway.app" }) {
   return (
     <div className="bg-gray-100 p-4 rounded-lg text-center hover:shadow-md hover:bg-red-100 transition-all max-w-sm max-h-500 flex flex-col justify-between">
       <div>
@@ -11,7 +11,7 @@ export default function RestaurantList({ name, description, img }) {
         <p className="text-gray-600 text-sm">{description}</p>
       </div>
       <a
-        href= "https://prepmate-launch.up.railway.app"
+        href= {orderLink}
         target="_blank"
         className="bg-primary text-white rounded-full px-10 py-1 text-sm mt-2 font-semibold hover:bg-primary-light mb-3"
       >

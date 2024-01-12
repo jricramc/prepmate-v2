@@ -10,9 +10,10 @@ export default function Hero() {
     <section className="hero md:mt-8 p-4 flex">
       <div className="px-1 md:py-12 mx-auto">
         <h1 className="text-4xl font-semibold">
-          Savor More<br />
           Spend Less<br />
-          Join&nbsp;
+          Money and Time<br />
+          On Food<br />
+          And Join&nbsp;
           <span className="text-primary">
             PrepMate
           </span>
