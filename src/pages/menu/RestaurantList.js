@@ -8,12 +8,12 @@ export default function RestaurantList({ name, description, img, orderLink = "ht
           <img src={img} className="max-h-auto max-h-32 block mx-auto" layout="fill" alt="prep" />
         </div>
         <h4 className="font-semibold my-3">{name}</h4>
-        <p className="text-gray-600 text-sm">{description}</p>
+        <p className="text-gray-600 text-md">{description}</p>
       </div>
       <a
         href= {orderLink}
         target="_blank"
-        className="bg-primary text-white rounded-full px-10 py-1 text-sm mt-2 font-semibold hover:bg-primary-light mb-3"
+        className="bg-primary text-white rounded-full px-10 py-1 text-md mt-2 font-semibold hover:bg-primary-light mb-3"
       >
         Order Now
       </a>

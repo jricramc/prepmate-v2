@@ -58,11 +58,11 @@ export default function Footer() {
               <div className="grid grid-cols-2 gap-8 xl:col-span-2">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-sm font-semibold leading-6 text-primary">Partnerships</h3>
+                    <h3 className="text-md font-semibold leading-6 text-primary">Partnerships</h3>
                     <ul role="list" className="mt-6 space-y-4">
                       {navigation.partnerships.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href} className="text-sm leading-6 text-black hover:text-gray-600">
+                          <a href={item.href} className="text-md leading-6 text-black hover:text-gray-600">
                             {item.name}
                           </a>
                         </li>
@@ -70,11 +70,11 @@ export default function Footer() {
                     </ul>
                   </div>
                   <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-semibold leading-6 text-primary">Support</h3>
+                    <h3 className="text-md font-semibold leading-6 text-primary">Support</h3>
                     <ul role="list" className="mt-6 space-y-4">
                       {navigation.support.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href} className="text-sm leading-6 text-black hover:text-gray-600">
+                          <a href={item.href} className="text-md leading-6 text-black hover:text-gray-600">
                             {item.name}
                           </a>
                         </li>
@@ -84,11 +84,11 @@ export default function Footer() {
                 </div>
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-sm font-semibold leading-6 text-primary">Company</h3>
+                    <h3 className="text-md font-semibold leading-6 text-primary">Company</h3>
                     <ul role="list" className="mt-6 space-y-4">
                       {navigation.company.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href} className="text-sm leading-6 text-black hover:text-gray-600">
+                          <a href={item.href} className="text-md leading-6 text-black hover:text-gray-600">
                             {item.name}
                           </a>
                         </li>
@@ -96,11 +96,11 @@ export default function Footer() {
                     </ul>
                   </div>
                   <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm font-semibold leading-6 text-primary">Legal</h3>
+                    <h3 className="text-md font-semibold leading-6 text-primary">Legal</h3>
                     <ul role="list" className="mt-6 space-y-4">
                       {navigation.legal.map((item) => (
                         <li key={item.name}>
-                          <a href={item.href} className="text-sm leading-6 text-black hover:text-gray-600">
+                          <a href={item.href} className="text-md leading-6 text-black hover:text-gray-600">
                             {item.name}
                           </a>
                         </li>
@@ -110,8 +110,8 @@ export default function Footer() {
                 </div>
               </div>
               <div className="mt-10 xl:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-black">We Love Food</h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
+                <h3 className="text-md font-semibold leading-6 text-black">We Love Food</h3>
+                <p className="mt-2 text-md leading-6 text-gray-600">
                     Do you love food?
                 </p>
               </div>

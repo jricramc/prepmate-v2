@@ -23,7 +23,7 @@ export default function Hero() {
           Top Local Meals Prepped for You. <br />
           Satisfaction is Just a Click Away.
         </p>
-        <div className="flex flex-col items-center gap-4 text-sm">
+        <div className="flex flex-col items-center gap-4 text-md">
           <a
             href={orderNowLink}
             target="_blank" // This opens the link in a new tab

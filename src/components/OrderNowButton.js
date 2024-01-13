@@ -9,7 +9,7 @@ export default function OrderNowButton() {
 
   return (
     <button 
-      className="mt-4 bg-primary text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-primary-light"
+      className="mt-4 bg-primary text-white rounded-full px-4 py-2 text-md font-semibold hover:bg-primary-light"
       onClick={handleOrderNowClick}
     >
       Order Now
