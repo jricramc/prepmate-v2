@@ -6,7 +6,7 @@ export default function Affilliates() {
       </div>
       <div>
         <p>
-            We will be 
+            We will be launching affiliate links soon! Stay tuned for updates!
         </p>
       </div>
     </div>
