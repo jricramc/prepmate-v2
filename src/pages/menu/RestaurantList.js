@@ -8,7 +8,7 @@ export default function RestaurantList({ name, description, img, orderLink = "ht
           <img src={img} className="max-h-auto max-h-32 block mx-auto" layout="fill" alt="prep" />
         </div>
         <h4 className="font-semibold my-3">{name}</h4>
-        <p className="text-gray-600 text-md">{description}</p>
+        <p className="text-gray-600 text-sm pb-2">{description}</p>
       </div>
       <a
         href= {orderLink}

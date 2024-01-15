@@ -8,6 +8,7 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'Restaurants', href: '/Restaurants', current: false },
+  { name: 'About Us', href: '/About', current: false },
 ]
 
 
@@ -41,7 +42,7 @@ export default function Example() {
                     height='100'
                     width='100'
                     className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
-                    src="redPrepMate.png"
+                    src="/redPrepMate.png"
                     alt="PrepMate Logo"
                   />
                   </a>
@@ -53,7 +54,7 @@ export default function Example() {
                       href={item.href}
                       className={classNames(
                         'text-black hover:text-primary',
-                        'rounded-md px-3 py-2 text-md font-medium'
+                        'rounded-md px-3 py-2 text-sm font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
                     >
