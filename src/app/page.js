@@ -13,13 +13,19 @@ export default function Home() {
           <div className='ml-5'>
             <ul className='list-disc'>
               <li className='mb-4'>
-              Choose Your Meals: Browse our diverse menu and select your favorite dishes from local restaurants. With PrepMate, you have the freedom to mix and match meals, creating your perfect meal plan for 3-4 days.
+              Choose Your Meals: Browse our diverse menu and select your favorite dishes from local restaurants. 
+              With PrepMate, you have the freedom to mix and match meals, creating your perfect meal plan for 3-4 days.
               </li>
               <li className='mb-4'>
-              Order by the Deadline: Make sure to place your order by 12 PM on either Saturday or Tuesday. This schedule helps us ensure that everything is fresh and ready for you.
+              Order by the Deadline: Make sure to place your order by 5 PM on either Saturday or Tuesday. 
+              This schedule helps us ensure that everything is fresh and ready for you.
               </li>
               <li className='mb-4'>
-              Relax and Wait for Delivery: Your carefully curated meal kit will be delivered to your doorstep the following day, between 5-9 PM. Enjoy the convenience of having multiple days' worth of delicious meals without the daily hassle of planning and cooking.
+              Wait for Delivery: Your carefully curated meal kit will be delivered to your doorstep the following day, between 5-9 PM. 
+              Enjoy the convenience of having multiple days' worth of delicious meals without the daily hassle of planning and cooking.
+              </li>
+              <li className='mb-4'>
+              Relax and Enjoy: Just heat up when you have time, whether it's 2PM or 2AM, and enjoy a delicious meal.
               </li>
             </ul>
           </div>

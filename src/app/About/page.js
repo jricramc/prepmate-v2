@@ -15,6 +15,15 @@ const people = [
         xUrl: '#',
         linkedinUrl: 'https://www.linkedin.com/in/josericardoramos22/',
       },
+    {
+        name:
+        'Santiago Vazquez',
+        role: 'Founding Engineer',
+        description: "MIT '25",
+        imageSource: '/team/santi.jpeg', 
+        xUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/santiago-enrique-vazquez-237a021a8/',
+    }
   ]
   
   export default function Example() {
@@ -29,7 +38,7 @@ const people = [
           </div>
           <ul
             role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
           >
             {people.map((person) => (
               <li key={person.name}>
