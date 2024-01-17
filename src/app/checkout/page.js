@@ -1,23 +1,21 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { RadioGroup } from '@headlessui/react'
-import { CheckCircleIcon, TrashIcon } from '@heroicons/react/20/solid'
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { allProducts } from '@/data/data'
-
-
-const deliveryMethods = [
-  { id: 1, title: 'Sunday Jan 21', price: '$2.99', time: '5 - 9PM' },
-  { id: 2, title: 'Wednesday Jan 24', price: '$2.99', time:'5 - 9PM' },
-]
-
+import { useSelector } from 'react-redux'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Example() {
-    const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(deliveryMethods[0])
-    const [subtotal, setSubtotal] = useState(0)
+    const deliveryMethods = [
+        { id: 1, title: 'Sunday Jan 21', price: '$2.99', time: '5 - 9PM' },
+        { id: 2, title: 'Wednesday Jan 24', price: '$2.99', time:'5 - 9PM' },
+      ]
+    const cartItems = useSelector((state) => state);
+    const [selectedDeliveryMethod, setSelectedDeliveryMethod] = useState(deliveryMethods[0]);
 
     useEffect(() => {
         let total = 0;
@@ -27,6 +25,7 @@ export default function Example() {
         setSubtotal(total);
       }, [allProducts]);
 
+    const subtotal = cartItems.reduce((total, item) => total + parseFloat(item.price), 0);
     const taxes = (subtotal * 0.12).toFixed(2);
     const deliveryPrice = parseFloat(selectedDeliveryMethod.price.replace('$', ''));
     const total = subtotal + deliveryPrice + parseFloat(taxes);
@@ -257,66 +256,16 @@ export default function Example() {
             {/* Order summary */}
             <div className="mt-10 lg:mt-0 sticky top-1000">
                 <h2 className="text-lg font-medium text-gray-900">Order summary</h2>
-
                 <div className="mt-4 rounded-lg border border-gray-200 bg-white shadow-sm">
                 <h3 className="sr-only">Items in your cart</h3>
-                <ul role="list" className="divide-y divide-gray-200">
-                    {allProducts.map((product) => (
-                    <li key={product.id} className="flex px-4 py-6 sm:px-6">
-                        <div className="flex-shrink-0">
-                        <img src={product.imageSrc} alt={product.imageAlt} className="w-20 rounded-md" />
-                        </div>
-
-                        <div className="ml-6 flex flex-1 flex-col">
-                        <div className="flex">
-                            <div className="min-w-0 flex-1">
-                            <h4 className="text-sm">
-                                <a href={product.href} className="font-medium text-gray-700 hover:text-gray-800">
-                                {product.title}
-                                </a>
-                            </h4>
-                            <p className="mt-1 text-sm text-gray-500">{product.color}</p>
-                            <p className="mt-1 text-sm text-gray-500">{product.size}</p>
-                            </div>
-
-                            <div className="ml-4 flow-root flex-shrink-0">
-                            <button
-                                type="button"
-                                className="-m-2.5 flex items-center justify-center bg-white p-2.5 text-gray-400 hover:text-gray-500"
-                            >
-                                <span className="sr-only">Remove</span>
-                                <TrashIcon className="h-5 w-5" aria-hidden="true" />
-                            </button>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-1 items-end justify-between pt-2">
-                            <p className="mt-1 text-sm font-medium text-gray-900">{product.price}</p>
-
-                            <div className="ml-4">
-                            <label htmlFor="quantity" className="sr-only">
-                                Quantity
-                            </label>
-                            <select
-                                id="quantity"
-                                name="quantity"
-                                className="rounded-md border border-gray-300 text-left text-base font-medium text-gray-700 shadow-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary sm:text-sm"
-                            >
-                                <option value={1}>1</option>
-                                <option value={2}>2</option>
-                                <option value={3}>3</option>
-                                <option value={4}>4</option>
-                                <option value={5}>5</option>
-                                <option value={6}>6</option>
-                                <option value={7}>7</option>
-                                <option value={8}>8</option>
-                            </select>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                    ))}
-                </ul>
+                    <ul role="list" className="divide-y divide-gray-200">
+                        {cartItems.map((item) => (
+                            <li key={item.id}>
+                            <div>{item.name}</div>
+                            <div>${item.price}</div>
+                            </li>
+                        ))}
+                    </ul>
                 <dl className="space-y-6 border-t border-gray-200 px-4 py-6 sm:px-6">
                     <div className="flex items-center justify-between">
                     <dt className="text-sm">Subtotal</dt>
