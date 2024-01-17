@@ -17,7 +17,7 @@ export default function AddToCartButton({ product, discountAmount }) {
     event.preventDefault();
     toast(<CustomToast itemName={itemName} discountAmount={discountAmount} />, {
       position: "top-right",
-      autoClose: 2000, // 5 seconds
+      autoClose: 2000, // 2 seconds
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: false,

@@ -1,7 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
     font-size: 20px; /* Adjust this value to your preference */
   }
+
+.Toastify__toast-container {
+  top: 80px !important;
+}
