@@ -10,25 +10,25 @@ export default function RestaurantPage() {
             <RestaurantList name="Life Alive" 
                 description="Organic, plant-based cafe in the Boston area serving food that is good for you and good for the planet." 
                 img= "/hongkong.jpeg" 
-                // orderLink="/stores/life-alive"
+                orderLink="/stores/life-alive"
                 />
 
                 <RestaurantList name="Spice Delight" 
                 description="With our array of spices and ingredients we bring you the finest Indian Cuisine in Massachusetts."
                 img= "dosa.jpeg" 
-                // orderLink="/stores/spice-delight"
+                orderLink="/stores/spice-delight"
                 />
 
                 <RestaurantList name="Mill City" 
                 description="Ready to go meal kits featuring rice bowls, pastas, and more." 
                 img = "mill.jpeg"
-                // orderLink="/stores/mill-city"
+                orderLink="/stores/mill-city"
                 />
 
                 <RestaurantList name="Silk Road" 
                 description="At Silk Road Uyghur Cuisine, we proudly prepare and serve a mix of authentic Uyghur and Central Asian dishes."
                 img= "silk-road.jpg" 
-                // orderLink="/stores/silk-road"
+                orderLink="/stores/silk-road"
                 />
                
             </div>

@@ -27,7 +27,7 @@ export default function Hero() {
           <a
             href={orderNowLink}
             target="_blank" // This opens the link in a new tab
-            className="flex justify-center bg-primary uppercase items-center gap-2 text-white px-4 py-2 rounded-full"
+            className="flex justify-center bg-primary uppercase items-center gap-2 text-white px-4 py-2 rounded-full hover:bg-red-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500"
           >
             Order now
             <Right />
