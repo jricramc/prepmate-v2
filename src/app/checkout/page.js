@@ -3,7 +3,13 @@ import { useState, useEffect } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon, TrashIcon } from '@heroicons/react/20/solid'
 import { allProducts } from '@/data/data'
-import { useSelector } from 'react-redux'
+
+
+const deliveryMethods = [
+  { id: 1, title: 'Sunday Jan 21', price: '$2.99', time: '5 - 9PM' },
+  { id: 2, title: 'Wednesday Jan 24', price: '$2.99', time:'5 - 9PM' },
+]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
