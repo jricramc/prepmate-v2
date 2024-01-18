@@ -1,5 +1,4 @@
 import Hero from '../pages/layout/hero'
-import HomeMenu from '../pages/layout/HomeRestaurants'
 import SectionHeader from '../pages/layout/SectionHeaders'
 
 export default function Home() {

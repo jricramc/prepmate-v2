@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { RadioGroup } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { allProducts } from '@/data/data'
-import { useSelector } from 'react-redux'
+import { useSelector, Provider } from 'react-redux'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

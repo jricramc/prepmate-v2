@@ -1,12 +1,12 @@
-import RootLayout from '@/app/_app';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from '@/redux/store';
+import Example from './checkout/page';
 
 function App() {
   return (
     <Provider store={store}>
-      <RootLayout />
+      <Example />
     </Provider>
   );
 }
