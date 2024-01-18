@@ -1,14 +1,15 @@
-import RootLayout from '@/app/_app';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from '@/redux/store';
+import RootLayout from './test';
 
-function App() {
-  return (
+export default function Layout() {
+  if (typeof window !== 'undefined')  // Check if window is defined
+  // ReactDOM.render(
     <Provider store={store}>
       <RootLayout />
-    </Provider>
-  );
+    </Provider>,
+    document.getElementById('root')
+  // );
 }
-
-export default App;
