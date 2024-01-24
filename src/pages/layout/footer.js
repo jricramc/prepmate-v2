@@ -12,7 +12,7 @@ const navigation = {
       { name: 'Careers', href: '/Careers' },
     ],
     legal: [
-      { name: 'Privacy', href: '/Privacy' },
+      { name: 'Privacy', href: '/documents/PrepMate Privacy Policy.pdf' },
       { name: 'Terms', href: '/Terms' },
       { name: 'Cookie Policy', href: '/Cookies' },
     ],
